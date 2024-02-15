@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            width: 100%;
+            margin: 0;
+        } 
+        .container{
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+            }
+        .card{
+            box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            box-sizing: border-box;
+            }
+        .card-pic{
+            width: 100%;
+        }
+        .card-pic img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+        .card-txt{
+            padding: 10px;
+        }
+        .card-price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .seeMore{
+            border: 1px solid orange;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .card:first-child,
+        .card:nth-child(2)
+        {
+            width: calc(50% - 20px);
+        }
+        .card:nth-child(3),
+        .card:nth-child(4),
+        .card:nth-child(5)
+        {
+            width: calc(33.333333% - 20px);
+        }
+        .noticeArea{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .notice{
+            font-size: 12px;
+        }
+        .more{
+            font-size: 12px;
+            text-decoration: underline;
+            margin-left: auto;
+            padding-right: 20px;
+        }
+        @media (max-width: 1200px) {
+            .card:first-child,
+            .card:nth-child(2),
+            .card:nth-child(3)
+            {
+                width: calc(33.333333% - 20px);
+            }
+            .card:nth-child(4),
+            .card:nth-child(5){
+                transition: all 2s;
+                display: none;
+            }
+            .noticeArea{
+            display: block;
+            justify-content: space-between;
+        }
+            .notice{
+                width: 30%;
+                margin: auto;
+                text-align: left;
+                margin-top: 5px;
+        }
+            .more{
+                width: fit-content;
+                text-align: center;
+                margin: 0 auto;
+                padding: 5px 10px;
+                border: 2px solid #000;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+        }
+        /* @media (max-width: 768px) {
+            .container{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .card{
+            margin: 5px;
+            box-sizing: border-box;
+            }
+            .card:first-child,
+            .card:nth-child(2),
+            .card:nth-child(3),
+            .card:nth-child(4),
+            .card:nth-child(5)
+            {
+                width: 100%;
+            }
+            .notice{
+                width: 100%;
+                margin: auto;
+                text-align: left;
+                margin-top: 5px;
+        }
+           
+            } */
+       
+    </style>
+
+    <div class="container">
+        <div class="card">
+                <div class="card-pic">
+                    <img src="https://media.istockphoto.com/id/1388402376/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%8D%B7%E7%89%A9%E8%BB%8A%E3%81%AE%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF%E3%81%84%E3%81%A3%E3%81%B1%E3%81%84%E3%81%AB%E5%BA%A7%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E7%8A%AC.webp?b=1&s=170667a&w=0&k=20&c=A1TsafyZ3-HIeKe6EKNa1fkrhl8F_dMhADRfoeeVy5I=" alt="">
+                </div>
+                <div class="card-txt">
+                    <p>HO CHI MINH CITY (SGN) –<br>
+                        SAN FRANCISCO (SFO)</p>
+                    <p>2021/05/26 - 2021/06/01</p>
+                    <div class="card-price">
+                        <p>來回<span>TWD 19,848</span>起</p>
+                        <span class="seeMore"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="card">
+                <div class="card-pic">
+                    <img src="https://media.istockphoto.com/id/1388402376/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%8D%B7%E7%89%A9%E8%BB%8A%E3%81%AE%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF%E3%81%84%E3%81%A3%E3%81%B1%E3%81%84%E3%81%AB%E5%BA%A7%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E7%8A%AC.webp?b=1&s=170667a&w=0&k=20&c=A1TsafyZ3-HIeKe6EKNa1fkrhl8F_dMhADRfoeeVy5I=" alt="">
+                </div>
+                <div class="card-txt">
+                    <p>HO CHI MINH CITY (SGN) –<br>
+                        SAN FRANCISCO (SFO)</p>
+                    <p>2021/05/26 - 2021/06/01</p>
+                    <div class="card-price">
+                        <p>來回<span>TWD 19,848</span>起</p>
+                        <span class="seeMore"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="card">
+                <div class="card-pic">
+                    <img src="https://media.istockphoto.com/id/1388402376/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%8D%B7%E7%89%A9%E8%BB%8A%E3%81%AE%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF%E3%81%84%E3%81%A3%E3%81%B1%E3%81%84%E3%81%AB%E5%BA%A7%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E7%8A%AC.webp?b=1&s=170667a&w=0&k=20&c=A1TsafyZ3-HIeKe6EKNa1fkrhl8F_dMhADRfoeeVy5I=" alt="">
+                </div>
+                <div class="card-txt">
+                    <p>HO CHI MINH CITY (SGN) –<br>
+                        SAN FRANCISCO (SFO)</p>
+                    <p>2021/05/26 - 2021/06/01</p>
+                    <div class="card-price">
+                        <p>來回<span>TWD 19,848</span>起</p>
+                        <span class="seeMore"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="card">
+                <div class="card-pic">
+                    <img src="https://media.istockphoto.com/id/1388402376/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%8D%B7%E7%89%A9%E8%BB%8A%E3%81%AE%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF%E3%81%84%E3%81%A3%E3%81%B1%E3%81%84%E3%81%AB%E5%BA%A7%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E7%8A%AC.webp?b=1&s=170667a&w=0&k=20&c=A1TsafyZ3-HIeKe6EKNa1fkrhl8F_dMhADRfoeeVy5I=" alt="">
+                </div>
+                <div class="card-txt">
+                    <p>HO CHI MINH CITY (SGN) –<br>
+                        SAN FRANCISCO (SFO)</p>
+                    <p>2021/05/26 - 2021/06/01</p>
+                    <div class="card-price">
+                        <p>來回<span>TWD 19,848</span>起</p>
+                        <span class="seeMore"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="card">
+                <div class="card-pic">
+                    <img src="https://media.istockphoto.com/id/1388402376/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%8D%B7%E7%89%A9%E8%BB%8A%E3%81%AE%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF%E3%81%84%E3%81%A3%E3%81%B1%E3%81%84%E3%81%AB%E5%BA%A7%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E7%8A%AC.webp?b=1&s=170667a&w=0&k=20&c=A1TsafyZ3-HIeKe6EKNa1fkrhl8F_dMhADRfoeeVy5I=" alt="">
+                </div>
+                <div class="card-txt">
+                    <p>HO CHI MINH CITY (SGN) –<br>
+                        SAN FRANCISCO (SFO)</p>
+                    <p>2021/05/26 - 2021/06/01</p>
+                    <div class="card-price">
+                        <p>來回<span>TWD 19,848</span>起</p>
+                        <span class="seeMore"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="noticeArea">
+            <p class="notice">✮ 現在沒關係我就是式已今晚沒了,做出感受不知面寫去的,還我還後又哥果真比要的手的水。</p>
+            <p class="more" id="more">More better fares ></p>
+        </div>
+    </div>
+
+    
+    <script>
+        const more = document.querySelector('#more')
+        const card4 = document.querySelector('.card:nth-child(4)')
+        const card5 = document.querySelector('.card:nth-child(5)')
+        more.addEventListener("click", ()=>{
+            card4.style.display = 'block';
+            card5.style.display = 'block';           
+        })
+    </script>
+</body>
+</html>
