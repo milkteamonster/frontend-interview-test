@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,61 +31,61 @@
             display: flex;
             flex-direction: column;
             }
-        .cardPic{
+        .card-pic{
             width: 100%;
         }
-        .cardPic img{
+        .card-pic img{
             width: 100%;
             vertical-align: bottom;
             border-radius: 5px 5px 0 0;
         }
-        .cardTxt{
+        .card-txt{
             padding: 15px;
             line-height: 30px;
         }
-        .cardTxt .title{
+        .card-txt .title{
             margin: 0;
             }
-        .cardTxt .date{
+        .card-txt .date{
             margin: 0;
             font-size: .9em;
             color: #767676;
         }
-        .cardPrice{
+        .card-price{
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .cardPrice p{
+        .card-price p{
             color: #767676;
             margin: 5px 0 0;
         }
-        .cardPrice p .twd{
+        .card-price p .twd{
             color:  rgb(222, 83, 18);
             font-size: 1.5em;
             letter-spacing: 1.5px;
             margin: 0 5px;
             }
-        .cardPrice p .num{
+        .card-price p .num{
             color:  rgb(222, 83, 18);
             font-size: 1.5em;
             letter-spacing: 1.5px;
             margin-right: 5px;
         }
-        .card:nth-child(3) .cardPrice p .twd,
-        .card:nth-child(4) .cardPrice p .twd,
-        .card:nth-child(5) .cardPrice p .twd,
-        .card:nth-child(6) .cardPrice p .twd{
+        .card:nth-child(3) .card-price p .twd,
+        .card:nth-child(4) .card-price p .twd,
+        .card:nth-child(5) .card-price p .twd,
+        .card:nth-child(6) .card-price p .twd{
             font-size: .9em;
             margin-left: 0;
         }
-        .card:nth-child(3) .cardPrice p .num,
-        .card:nth-child(4) .cardPrice p .num,
-        .card:nth-child(5) .cardPrice p .num,
-        .card:nth-child(6) .cardPrice p .num{
+        .card:nth-child(3) .card-price p .num,
+        .card:nth-child(4) .card-price p .num,
+        .card:nth-child(5) .card-price p .num,
+        .card:nth-child(6) .card-price p .num{
             font-size: 1.3em;   
         }
-        .seeMore{
+        .seemore{
             border: 1px solid rgb(222, 83, 18);
             width: 30px;
             height: 30px;
@@ -94,7 +94,7 @@
             cursor: pointer;
             margin-top: auto;
         }
-        .seeMore:before{
+        .seemore:before{
             content: '';
             width: 9px;
             height: 9px;
@@ -107,7 +107,7 @@
             margin-top: -5px;
             transform: rotate(45deg);
         }
-        .seeMore .seeMoreTxt{
+        .seemore .seemore-txt{
             display: none;
         }
         .card:first-child,
@@ -123,7 +123,7 @@
         {
             width: calc(25% - 20px);
         }
-        .noticeArea{
+        .notice-area{
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -164,18 +164,18 @@
                 display: none;
                 width: calc(33.333333% - 20px);
             }
-            .cardPic{
+            .card-pic{
                 position: absolute;
                 right: 10px;
                 top: 10px;
                 width: fit-content;
             }
-            .cardPic img{
+            .card-pic img{
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
             }
-            .cardTxt{
+            .card-txt{
                 display: flex;
                 flex-direction: column;
                 padding: 15px;
@@ -184,29 +184,29 @@
                 height: 100%;
                 box-sizing: border-box;
             }
-            .cardTxt .title{
+            .card-txt .title{
                 width: 70%;
             }
-            .card:first-child .cardPrice p .twd,
-            .card:nth-child(2) .cardPrice p .twd{
+            .card:first-child .card-price p .twd,
+            .card:nth-child(2) .card-price p .twd{
                 font-size: .9em;
             }
-            .card:nth-child(3) .cardPrice p .twd,
-            .card:nth-child(4) .cardPrice p .twd,
-            .card:nth-child(5) .cardPrice p .twd,
-            .card:nth-child(6) .cardPrice p .twd{
+            .card:nth-child(3) .card-price p .twd,
+            .card:nth-child(4) .card-price p .twd,
+            .card:nth-child(5) .card-price p .twd,
+            .card:nth-child(6) .card-price p .twd{
                 margin-left: 5px;
             }
-            .cardPrice{
+            .card-price{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 margin-top: auto;
             }
-            .cardPrice p{
+            .card-price p{
                 margin: 5px 0 10px;
             }
-            .seeMore{
+            .seemore{
                 width: 100%;
                 display: block;
                 border: none;
@@ -214,10 +214,10 @@
                 border-radius: 3px;
                 text-decoration: none;
             }
-            .seeMore::before{
+            .seemore::before{
                 display: none;
             }
-            .seeMore .seeMoreTxt{
+            .seemore .seemore-txt{
                 text-decoration: none;
                 color: #fff;
                 display: flex;
@@ -228,7 +228,7 @@
                 height: 100%;
                 font-size: .9em;
         }
-            .noticeArea{
+            .notice-area{
                 display: block;
                 justify-content: space-between;
         }
@@ -284,92 +284,92 @@
 
     <div class="container">
         <div class="card">
-                <div class="cardPic">
-                    <img src="https://images.unsplash.com/photo-1597307932023-38eeb19069ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEhPJTIwQ0hJJTIwTUlOSCUyMENJVFl8ZW58MHx8MHx8fDA%3D" alt="">
+                <div class="card-pic">
+                    <img src="https://images.unsplash.com/photo-1597307932023-38eeb19069ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEhPJTIwQ0hJJTIwTUlOSCUyMENJVFl8ZW58MHx8MHx8fDA%3D" alt="胡志明">
                 </div>
-                <div class="cardTxt">
+                <div class="card-txt">
                     <p class="title">HO CHI MINH CITY (SGN) –<br>
                         SAN FRANCISCO (SFO)</p>
                     <p class="date">2021/05/26 - 2021/06/01</p>
-                    <div class="cardPrice">
+                    <div class="card-price">
                         <p>來回<span class="twd">TWD</span><span class="num">19,848</span>起</p>
-                        <a class="seeMore" href="#"><span class="seeMoreTxt">前往購票</span></a>
+                        <a class="seemore" href="#"><span class="seemore-txt">前往購票</span></a>
                     </div>
                 </div>
         </div>
         <div class="card">
-                <div class="cardPic">
-                    <img src="https://plus.unsplash.com/premium_photo-1661956159899-5a6c7193123f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRhaXBlaXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <div class="card-pic">
+                    <img src="https://plus.unsplash.com/premium_photo-1661956159899-5a6c7193123f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRhaXBlaXxlbnwwfHwwfHx8MA%3D%3D" alt="台北">
                 </div>
-                <div class="cardTxt">
+                <div class="card-txt">
                     <div class="wrap">
                         <p class="title">台北(桃園機場) - TPE -<br>
                             第三新東京市 - NTK</p>
                         <p class="date">2021/05/26 - 2021/06/01</p>
                     </div>
-                    <div class="cardPrice">
+                    <div class="card-price">
                         <p>來回<span class="twd">TWD</span><span class="num">19,848</span>起</p>
-                        <a class="seeMore" href="#"><span class="seeMoreTxt">前往購票</span></a>
+                        <a class="seemore" href="#"><span class="seemore-txt">前往購票</span></a>
                     </div>
                 </div>
         </div>
         <div class="card">
-                <div class="cardPic">
-                    <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2FuZnJhbmNpc2NvfGVufDB8fDB8fHww" alt="">
+                <div class="card-pic">
+                    <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2FuZnJhbmNpc2NvfGVufDB8fDB8fHww" alt="舊金山">
                 </div>
-                <div class="cardTxt">
+                <div class="card-txt">
                     <p class="title">HO CHI MINH CITY (SGN) –<br>
                         SAN FRANCISCO (SFO)</p>
                     <p class="date">2021/05/26 - 2021/06/01</p>
-                    <div class="cardPrice">
+                    <div class="card-price">
                         <p>來回<br class="sp"><span class="twd">TWD</span><span class="num">19,848</span>起</p>
-                        <a class="seeMore" href="#"><span class="seeMoreTxt">前往購票</span></a>
+                        <a class="seemore" href="#"><span class="seemore-txt">前往購票</span></a>
                     </div>
                 </div>
         </div>
         <div class="card">
-                <div class="cardPic">
-                    <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHRva3lvfGVufDB8fDB8fHww" alt="">
+                <div class="card-pic">
+                    <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHRva3lvfGVufDB8fDB8fHww" alt="東京">
                 </div>
-                <div class="cardTxt">
+                <div class="card-txt">
                     <p class="title">台北(桃園機場) - TPE -<br>
                         第三新東京市 - NTK</p>
                     <p class="date">2021/05/26 - 2021/06/01</p>
-                    <div class="cardPrice">
+                    <div class="card-price">
                         <p>來回<br class="sp"><span class="twd">TWD</span><span class="num">19,848</span>起</p>
-                        <a class="seeMore" href="#"><span class="seeMoreTxt">前往購票</span></a>
+                        <a class="seemore" href="#"><span class="seemore-txt">前往購票</span></a>
                     </div>
                 </div>
         </div>
         <div class="card">
-                <div class="cardPic">
-                    <img src="https://images.unsplash.com/photo-1586812416094-a79ae86d22f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fE5ZQ3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <div class="card-pic">
+                    <img src="https://images.unsplash.com/photo-1586812416094-a79ae86d22f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fE5ZQ3xlbnwwfHwwfHx8MA%3D%3D" alt="紐約">
                 </div>
-                <div class="cardTxt">
+                <div class="card-txt">
                     <p class="title">台北(桃園機場) - TPE -<br>
                         高譚市 - NYC</p>
                     <p class="date">2021/05/26 - 2021/06/01</p>
-                    <div class="cardPrice">
+                    <div class="card-price">
                         <p>來回<br class="sp"><span class="twd">TWD</span><span class="num">19,848</span>起</p>
-                        <a class="seeMore" href="#"><span class="seeMoreTxt">前往購票</span></a>
+                        <a class="seemore" href="#"><span class="seemore-txt">前往購票</span></a>
                     </div>
                 </div>
         </div>
         <div class="card">
-                <div class="cardPic">
-                    <img src="https://images.unsplash.com/photo-1542704792-e30dac463c90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG9yb250b3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <div class="card-pic">
+                    <img src="https://images.unsplash.com/photo-1542704792-e30dac463c90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG9yb250b3xlbnwwfHwwfHx8MA%3D%3D" alt="多倫多">
                 </div>
-                <div class="cardTxt">
+                <div class="card-txt">
                     <p class="title">台北(桃園機場) - TPE -<br>
                         多倫多 - YYZ</p>
                     <p class="date">2021/05/26 - 2021/06/01</p>
-                    <div class="cardPrice">
+                    <div class="card-price">
                         <p>來回<br class="sp"><span class="twd">TWD</span><span class="num">19,848</span>起</p>
-                        <a class="seeMore" href="#"><span class="seeMoreTxt">前往購票</span></a>
+                        <a class="seemore" href="#"><span class="seemore-txt">前往購票</span></a>
                     </div>
                 </div>
         </div>
-        <div class="noticeArea">
+        <div class="notice-area">
             <p class="notice">✮ 現在沒關係我就是式已今晚沒了,做出感受不知面寫去的,還我還後又哥果真比要的手的水。</p>
             <p class="more-pc">More better fares ></p>
             <p class="more-sp">More better fares ></p>
